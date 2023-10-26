@@ -1,6 +1,6 @@
 # vec_to_array
 
-Transmutes a heap allocated `Vec` into a stack allocated array.
+Moves a heap allocated `Vec` into a stack allocated array.
 
 ```rust
 let vec: Vec<i64> = vec![1, 2, 3];

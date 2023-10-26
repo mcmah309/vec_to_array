@@ -1,17 +1,17 @@
-//! Transmutes a heap allocated `Vec<T>` to an stack allocated array of type `T` and size `N`.
+//! Moves a heap allocated `Vec<T>` to an stack allocated array of type `T` and size `N`.
 
 
-/// Tries to transmute a `Vec<T>` into an array of type `T` and size `N`.
+/// Tries to move a `Vec<T>` into an array of type `T` and size `N`.
 ///
 /// # Arguments
 ///
-/// - `$vec`: The vector to be transmuted.
+/// - `$vec`: The vector to be moved.
 /// - `$t`: The type of the elements in the vector and array.
 /// - `$size`: The expected size of the array.
 ///
 /// # Returns
 ///
-/// - `Ok([T; N])` if the vector can be transmuted successfully.
+/// - `Ok([T; N])` if the vector can be moved successfully.
 /// - `Err(VecToArrayError::SizeMismatch)` if the size of the vector doesn't match the specified size.
 ///
 /// # Examples
@@ -41,13 +41,13 @@ macro_rules! try_vec_to_array {
     }
 }
 
-/// Transmutes a `Vec<T>` into an array of type `T` and size `N`.
+/// Moves a `Vec<T>` into an array of type `T` and size `N`.
 ///
 /// This macro will panic if the size of the vector is different from the specified size.
 ///
 /// # Arguments
 ///
-/// - `$vec`: The vector to be transmuted.
+/// - `$vec`: The vector to be moved.
 /// - `$t`: The type of the elements in the vector and array.
 /// - `$size`: The expected size of the array.
 ///
