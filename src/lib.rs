@@ -1,4 +1,4 @@
-///! Crate that provides macros for transmuting a `Vec<T>` to an array of type `T` and size `N`.
+//! Transmutes a heap allocated `Vec<T>` to an stack allocated array of type `T` and size `N`.
 
 
 /// Tries to transmute a `Vec<T>` into an array of type `T` and size `N`.
