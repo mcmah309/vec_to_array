@@ -1,9 +1,9 @@
 [package]
 name = "vec_to_array"
 license = "MIT"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
-description = "Vec to array translation macro"
+description = "Transmutes a heap allocated `Vec` into a stack allocated array"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
