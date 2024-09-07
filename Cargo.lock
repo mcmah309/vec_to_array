@@ -4,4 +4,4 @@ version = 3
 
 [[package]]
 name = "vec_to_array"
-version = "0.2.4"
+version = "0.2.5"
