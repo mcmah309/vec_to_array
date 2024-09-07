@@ -166,4 +166,11 @@ mod tests {
         let v: Vec<i32> = Vec::with_capacity(768);
         let _arr: [i32; 768] = vec_to_array!(v, i32, 768);
     }
+
+    // #[test]
+    // fn test_borrow_checker_works() {
+    //     let v: Vec<String> = vec![String::new(); 768];
+    //     let _arr: [String; 768] = vec_to_array!(v, String, 768);
+    //     let _arr2: [String; 768] = vec_to_array!(v, String, 768);
+    // }
 }
